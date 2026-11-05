@@ -1,0 +1,25 @@
+{
+  // Landing de Monetix: Worker solo con archivos estáticos (sin código de servidor).
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "marketing-landing-web",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  },
+  "workers_dev": false,
+
+  "env": {
+    // Ambiente dev: rama develop -> https://dev.monetix.mx (protegido con Cloudflare Access)
+    "dev": {
+      "routes": [{ "pattern": "dev.monetix.mx", "custom_domain": true }]
+    }
+
+    // Producción (rama main) se agrega cuando el portal ya viva en su subdominio:
+    // "production": {
+    //   "routes": [
+    //     { "pattern": "monetix.mx", "custom_domain": true }
+    //   ]
+    // }
+  }
+}
