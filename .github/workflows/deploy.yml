@@ -1,0 +1,33 @@
+name: Deploy landing
+
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  deploy-dev:
+    name: Publicar en dev.monetix.mx
+    if: github.ref_name == 'develop'
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://dev.monetix.mx
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy a Cloudflare Workers (env dev)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --env dev
+
+  # Producción (main -> monetix.mx) se habilita después de mover el portal a su subdominio.
