@@ -1,386 +1,435 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Monetix — El cobro es solo el principio.</title>
-  <meta name="description" content="Monetix conecta el cobro con tu operación. Cobra, registra y concilia directo en Microsip.">
+  <meta name="description"
+    content="Monetix conecta el cobro con tu operación. Cobra, registra y concilia directo en Microsip.">
   <meta name="theme-color" content="#202427">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-<div class="grain" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
-<div class="page-shell">
-  <main class="frame">
+  <div class="page-shell">
+    <main class="frame">
 
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="inicio">
-      <!-- SLIDER DEL HERO: para cambiar las fotos solo reemplaza los archivos
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="inicio">
+        <!-- SLIDER DEL HERO: para cambiar las fotos solo reemplaza los archivos
            assets/hero-1.jpg, assets/hero-2.jpg y assets/hero-3.jpg -->
-      <div class="hero-slides" aria-hidden="true">
-        <div class="hero-slide active"><img src="assets/hero-1.jpg" alt=""></div>
-        <div class="hero-slide"><img src="assets/hero-2.jpg" alt=""></div>
-        <div class="hero-slide"><img src="assets/hero-3.jpg" alt=""></div>
-      </div>
-      <div class="hero-orbit" aria-hidden="true"><span class="orbit-dot"></span></div>
-
-      <nav class="nav anim-fade" style="--d:.25s">
-        <div class="nav-pill">
-          <a href="#solucion">Solución</a>
-          <a href="#como-funciona">Cómo funciona</a>
-          <a href="#partners">Partners</a>
+        <div class="hero-slides" aria-hidden="true">
+          <div class="hero-slide active"><img src="assets/hero-1.jpg" alt=""></div>
+          <div class="hero-slide"><img src="assets/hero-2.jpg" alt=""></div>
+          <div class="hero-slide"><img src="assets/hero-3.jpg" alt=""></div>
         </div>
+        <div class="hero-orbit" aria-hidden="true"><span class="orbit-dot"></span></div>
 
-        <a href="#inicio" aria-label="Monetix">
-          <img class="nav-logo" src="assets/monetix-white.png" alt="Monetix">
-        </a>
-
-        <div class="nav-actions">
-          <button class="nav-login" data-portal>Regístrate</button>
-          <button class="nav-start" data-portal>Iniciar sesión</button>
-        </div>
-      </nav>
-
-      <div class="hero-inner">
-        <div class="hero-copy">
-          <div class="eyebrow anim-fade" style="--d:.5s"><span class="eyebrow-dot"></span> Agregador de pagos · integrado con Microsip</div>
-          <h1>
-            <span class="ml"><span class="ml-in" data-delay=".6s">El cobro es</span></span>
-            <span class="ml"><span class="ml-in" data-delay=".73s">solo el</span></span>
-            <span class="ml"><span class="ml-in accent-cyan" data-delay=".86s">principio.</span></span>
-          </h1>
-          <p class="hero-sub anim-fade" style="--d:1.1s">Transforma cada transacción en claridad para tu negocio. Cobra, registra y concilia directamente en tu sistema Microsip.</p>
-          <div class="hero-payment-methods anim-fade" style="--d:1.25s" aria-label="Acepta cobros con Visa y Mastercard">
-            <span>Acepta cobros con</span>
-            <div class="hero-payment-logos">
-              <img src="assets/visa.png" alt="Visa">
-              <img src="assets/mastercard.png" alt="Mastercard">
-            </div>
-          </div>
-        </div>
-
-        <aside class="hero-card-wrap anim-fade" style="--d:1s" aria-label="Ejemplo de transacción">
-          <div class="hero-card-tilt" id="tilt-card">
-            <div class="payment-card float-slow">
-              <div class="payment-top">
-                <span class="payment-label">Cobro aprobado</span>
-                <span class="status"><i></i> Sincronizado</span>
-              </div>
-              <div class="amount">$<span data-count="2480" data-decimals="2">0.00</span></div>
-              <div class="payment-meta">
-                <span>Terminal</span><span>Verifone P630</span>
-                <span>Operación</span><span>Venta</span>
-                <span>Referencia</span><span>MX-01842</span>
-              </div>
-              <div class="sync">
-                <span class="sync-mark">✓</span>
-                Registrado automáticamente en Microsip
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-
-      <button class="scroll-cue anim-fade" style="--d:1.9s" data-scroll-to="#solucion" aria-label="Bajar a la siguiente sección">
-        <span class="cue-arrow">↓</span>
-      </button>
-    </section>
-
-    <!-- ============ RESPALDO E INTEGRACIÓN ============ -->
-    
-    <section class="ecosystem" aria-label="Respaldo e integración">
-      <div class="ecosystem-heading">Una operación conectada con:</div>
-
-      <div class="ecosystem-grid">
-
-        <article class="ecosystem-item reveal">
-          <div class="ecosystem-logo-wrap ecosystem-logo-wrap--microsip">
-            <img
-              src="assets/microsip-logo.png"
-              alt="Microsip"
-              class="ecosystem-logo ecosystem-logo--microsip"
-            >
-          </div>
-          <p>Integración nativa</p>
-        </article>
-
-      </div>
-    </section>
-
-
-    <!-- ============ SOLUCIÓN ============ -->
-    <section class="section" id="solucion">
-      <div class="value-intro">
-        <div>
-          <p class="section-kicker reveal">Una sola operación</p>
-          <h2 class="section-title">
-            <span class="ml"><span class="ml-in">Cobra. Registra.</span></span>
-            <span class="ml"><span class="ml-in accent-deep" data-delay=".12s">Controla.</span></span>
-          </h2>
-        </div>
-        <p class="section-copy reveal" data-delay=".2s">Monetix no agrega otra capa a tu negocio. Conecta el pago con la operación que ya tienes: cada cobro entra a Microsip y deja información lista para consultar y conciliar.</p>
-      </div>
-
-      <div class="value-grid">
-        <article class="feature feature-dark reveal lift">
-          <div>
-            <p class="section-kicker" style="color:rgba(255,255,255,.42)">01 · Cobra</p>
-            <h3>La terminal es tu punto de partida.</h3>
-            <p>Acepta el cobro y lleva la transacción a tu operación en Microsip.</p>
-            <div class="pci-note">
-              <img src="assets/pci.png" alt="PCI" class="pci-logo">
-              <span>Cifrado de punto a punto por PCI</span>
-            </div>
-          </div>
-          <div class="terminal-stage stagger" aria-hidden="true">
-            <img src="assets/terminal-p630.png" alt="Terminal Monetix Verifone P630" class="terminal-stage-img">
-          </div>
-        </article>
-
-        <div class="feature-stack">
-          <article class="feature feature-pale reveal lift" data-delay=".12s">
-            <div>
-              <p class="section-kicker">02 · Registra</p>
-              <h3>Microsip se actualiza.</h3>
-            </div>
-            <div class="mini-ledger stagger">
-              <div class="tiny-label">Movimientos</div>
-              <div class="ledger-row"><span>Venta 01842</span><strong>$2,480</strong></div>
-              <div class="ledger-row"><span>Venta 01841</span><strong>$1,320</strong></div>
-              <div class="ledger-row"><span>Venta 01840</span><strong>$890</strong></div>
-            </div>
-          </article>
-
-          <article class="feature feature-photo reveal lift" data-delay=".22s">
-            <img src="assets/merchant-tablet-clean.jpg" alt="Negocio operando con información digital">
-            <div class="photo-copy">
-              <p class="section-kicker" style="color:rgba(255,255,255,.58)">03 · Controla</p>
-              <h3>Los datos dejan de estar separados.</h3>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CÓMO FUNCIONA ============ -->
-    <section class="section journey" id="como-funciona">
-      <div class="journey-head">
-        <div>
-          <p class="section-kicker reveal">Cómo funciona</p>
-          <h2 class="section-title">
-            <span class="ml"><span class="ml-in">Del cobro a la operación,</span></span>
-            <span class="ml"><span class="ml-in" data-delay=".12s">sin pasos <span class="accent-deep">de más.</span></span></span>
-          </h2>
-        </div>
-        <button class="btn btn-primary reveal" data-delay=".25s" data-portal>Iniciar proceso <span class="arrow">→</span></button>
-      </div>
-
-      <div class="journey-grid">
-        <article class="journey-card reveal lift">
-          <span class="journey-number">01</span>
-          <div>
-            <h3>Cobra.</h3>
-            <p>El cliente paga en tu terminal Verifone P630.</p>
-          </div>
-          <div class="journey-visual">
-            <div class="receipt stagger">
-              <div class="tiny-label">Venta aprobada</div>
-              <div class="receipt-row"><span>Total</span><strong>$2,480.00</strong></div>
-              <div class="receipt-row"><span>Tarjeta</span><strong>•••• 4821</strong></div>
-              <div class="receipt-row"><span>Estado</span><strong>OK</strong></div>
-            </div>
-          </div>
-        </article>
-
-        <article class="journey-card cyan reveal lift" data-delay=".12s">
-          <span class="journey-number">02</span>
-          <div>
-            <h3>Registra.</h3>
-            <p>La información del cobro se integra a Microsip, sin volver a capturarla.</p>
-          </div>
-          <div class="journey-visual">
-            <img src="assets/terminal-close-clean.jpg" alt="Terminal bancaria" class="journey-photo">
-          </div>
-        </article>
-
-        <article class="journey-card dark reveal lift" data-delay=".24s" data-bars>
-          <span class="journey-number">03</span>
-          <div>
-            <h3>Controla.</h3>
-            <p>Consulta movimientos y convierte transacciones en información útil para tomar decisiones.</p>
-          </div>
-          <div class="bars" aria-hidden="true">
-            <div class="bar" style="height:36%"></div>
-            <div class="bar" style="height:58%;background:#5bc9d7"></div>
-            <div class="bar" style="height:78%"></div>
-            <div class="bar" style="height:45%;background:#a8e5ec"></div>
-            <div class="bar" style="height:92%;background:#fff"></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ CLARIDAD ============ -->
-    <section class="section clarity">
-      <div class="clarity-copy">
-        <p class="section-kicker reveal">Claridad operativa</p>
-        <h2 class="section-title">
-          <span class="ml"><span class="ml-in">Sin letra chiquita.</span></span>
-          <span class="ml"><span class="ml-in" data-delay=".12s">Sin información <span class="accent-deep">dispersa.</span></span></span>
-        </h2>
-        <p class="section-copy reveal" data-delay=".2s">Monetix está diseñado para saber qué ocurrió con cada cobro y dónde quedó registrado. La tecnología ordena y hace más fácil la operación.</p>
-        <button class="btn reveal" data-delay=".3s" data-wa>Hablar con Monetix <span class="arrow">→</span></button>
-      </div>
-
-      <aside class="clarity-card reveal lift" data-delay=".15s">
-        <div>
-          <p class="section-kicker" style="color:rgba(32,36,39,.55)">Vista de operación</p>
-          <h3>Todo lo importante, en contexto.</h3>
-        </div>
-        <div class="clarity-value"><span data-count="100" data-suffix="%">0</span><br><span>visible.</span></div>
-        <div class="clarity-stack stagger">
-          <div class="clarity-row"><span>Cobro</span><strong>Aprobado</strong></div>
-          <div class="clarity-row"><span>Registro Microsip</span><strong>Sincronizado</strong></div>
-          <div class="clarity-row"><span>Referencia</span><strong>MX-01842</strong></div>
-        </div>
-      </aside>
-    </section>
-
-    <!-- ============ PARTNERS ============ -->
-    <section class="partners" id="partners">
-      <div>
-        <p class="section-kicker reveal">Partners Monetix</p>
-        <h2 class="section-title">
-          <span class="ml"><span class="ml-in">Haz negocio con Monetix.</span></span>
-          <span class="ml"><span class="ml-in" data-delay=".12s">Llega a más <span class="accent-deep">comercios.</span></span></span>
-        </h2>
-        <p class="section-copy reveal" data-delay=".2s">Si puedes acercar Monetix a un comercio, una empresa o una organización, puedes ganar una comisión por ello. Si ya eres Partner Microsip, tu nivel es Estratégico desde el primer día.</p>
-        <button class="btn btn-primary reveal" style="margin-top:28px" data-delay=".3s" data-wa>Quiero ser Partner <span class="arrow">→</span></button>
-      </div>
-
-      <div class="partner-levels">
-        <div class="partner-level reveal lift">
-          <span class="partner-badge">01</span>
-          <div><h4>Cliente directo</h4><p>Empresa o comercio que se afilia directamente.</p></div>
-          <strong>Monetix</strong>
-        </div>
-        <div class="partner-level reveal lift" data-delay=".12s">
-          <span class="partner-badge">02</span>
-          <div><h4>Partner Monetix</h4><p>Refiere clientes y genera una comisión.</p></div>
-          <strong>Comercial</strong>
-        </div>
-        <div class="partner-level featured reveal lift" data-delay=".24s">
-          <span class="partner-badge">03</span>
-          <div><h4>Partner Estratégico Monetix</h4><p>Para miembros de la red Partner Microsip.</p></div>
-          <strong>Preferencial</strong>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ LINK DE COBRO ============ -->
-    <section class="payment-link" id="link-de-cobro" aria-labelledby="payment-link-title">
-      <div class="payment-link-copy">
-        <p class="section-kicker reveal">Proceso de compra simplificado</p>
-        <h2 class="section-title" id="payment-link-title">
-          <span class="ml"><span class="ml-in">Link de</span></span>
-          <span class="ml"><span class="ml-in accent-deep" data-delay=".12s">pago.</span></span>
-        </h2>
-        <p class="payment-link-lead reveal" data-delay=".2s">Cobra fácil y rápido enviando un link de pago a tus clientes.</p>
-        <p class="payment-link-description reveal" data-delay=".3s">Compártelo por WhatsApp, correo o el canal que prefieras para que puedan pagar de forma sencilla y segura.</p>
-      </div>
-      <div class="payment-link-visual reveal" data-delay=".15s">
-        <img src="assets/link-cobro-iphone.png" alt="Ejemplo del formulario de pago Monetix en un teléfono" loading="lazy" width="2048" height="1351">
-      </div>
-    </section>
-
-    <!-- ============ FAQ ============ -->
-    <section class="faq" id="faq">
-      <div>
-        <p class="section-kicker reveal" style="color:var(--cyan)">Preguntas frecuentes</p>
-        <h2 class="section-title">
-          <span class="ml"><span class="ml-in">Lo que conviene saber</span></span>
-          <span class="ml"><span class="ml-in" data-delay=".12s">antes de <span class="accent-cyan">cambiar.</span></span></span>
-        </h2>
-        <p class="section-copy reveal" data-delay=".2s">Respuestas directas para empresas que ya conocen las terminales y quieren una operación más integrada.</p>
-      </div>
-
-      <div class="faq-list reveal" data-delay=".15s">
-        <div class="faq-item open">
-          <button class="faq-q"><span>¿En qué se diferencia Monetix de cualquier otra terminal bancaria?</span><span>＋</span></button>
-          <div class="faq-a">La diferencia no está en la terminal, sino en todo lo que pasa después del cobro: la transacción se concilia sola con Microsip, tu dinero se refleja al día siguiente en el módulo de bancos, y cada venta puede facturarse en automático. Menos captura manual, más control real de tu negocio.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q"><span>¿Cuáles son las comisiones y costos reales?</span><span>＋</span></button>
-          <div class="faq-a">En Monetix no hay letras chiquitas: la tarifa que te corresponde se calcula según tu giro y se te presenta por escrito antes de que decidas contratar. Así sabes exactamente cuánto pagas por cada cobro, sin sorpresas ni cargos ocultos.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q"><span>¿Qué pasa si tengo un problema con un cobro o una disputa?</span><span>＋</span></button>
-          <div class="faq-a">Ninguna transacción se queda sin rastro. Monetix opera con el respaldo de una institución financiera y guarda el detalle completo de cada cobro, así que si algo necesita revisarse, hay información clara y disponible para resolverlo.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q"><span>¿Cuánto tiempo tarda el proceso de alta?</span><span>＋</span></button>
-          <div class="faq-a">Todo comienza en el Portal Monetix, donde registras los datos de tu negocio. De ahí, el equipo revisa y valida esa información antes de aprobar el alta. El tiempo exacto depende de qué tan completa esté tu documentación, pero te acompañamos en cada paso para agilizarlo.</div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q"><span>¿Necesito usar Microsip para contratar Monetix?</span><span>＋</span></button>
-          <div class="faq-a">No, Monetix funciona por sí solo como solución de cobro. Lo que sí es cierto es que, si ya usas Microsip, la integración te da ventajas que ningún otro complementa: conciliación automática, depósitos reflejados en tu módulo de bancos y facturación conectada, completando el paquete de ventajas más competitivo del mercado. Si no usas Microsip, cuéntanos tu caso y el equipo comercial te confirma las opciones disponibles para tu negocio.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FINAL + FOOTER ============ -->
-    <section class="final">
-      <p class="section-kicker reveal">Empieza con claridad</p>
-      <h2 class="section-title">
-        <span class="ml"><span class="ml-in">El crecimiento no se improvisa.</span></span>
-        <span class="ml"><span class="ml-in" data-delay=".12s">Se diseña con <span class="accent-deep">claridad.</span></span></span>
-      </h2>
-      <p class="section-copy reveal" data-delay=".2s">Inicia tu proceso en Portal Monetix o habla con el equipo si prefieres acompañamiento.</p>
-      <div class="final-actions reveal" data-delay=".3s">
-        <button class="btn btn-primary" data-portal>Iniciar en Portal Monetix <span class="arrow">→</span></button>
-        <button class="btn btn-light" data-wa>WhatsApp</button>
-      </div>
-
-      <footer>
-        <div class="footer-top">
-          <div class="footer-brand">
-            <img class="footer-logo" src="assets/monetix-white.png" alt="Monetix">
-            <p>Agregador de pagos con integración al ecosistema Microsip. El cobro es solo el principio.</p>
-          </div>
-          <div class="footer-col">
-            <h5>Producto</h5>
+        <nav class="nav anim-fade" style="--d:.25s">
+          <div class="nav-pill">
             <a href="#solucion">Solución</a>
             <a href="#como-funciona">Cómo funciona</a>
             <a href="#partners">Partners</a>
-            <a href="#faq">FAQ</a>
           </div>
-          <div class="footer-col">
-            <h5>Contacto</h5>
-            <a href="#" data-wa>WhatsApp</a>
-            <a href="mailto:contacto@monetix.mx">contacto@monetix.mx</a>
-            <a href="#" data-portal>Portal Monetix</a>
+
+          <a href="#inicio" aria-label="Monetix">
+            <img class="nav-logo" src="assets/monetix-white.png" alt="Monetix">
+          </a>
+
+          <div class="nav-actions">
+            <button class="nav-login" data-portal>Regístrate prueba</button>
+            <button class="nav-start" data-portal>Iniciar sesión</button>
+          </div>
+        </nav>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="eyebrow anim-fade" style="--d:.5s"><span class="eyebrow-dot"></span> Agregador de pagos ·
+              integrado con Microsip</div>
+            <h1>
+              <span class="ml"><span class="ml-in" data-delay=".6s">El cobro es</span></span>
+              <span class="ml"><span class="ml-in" data-delay=".73s">solo el</span></span>
+              <span class="ml"><span class="ml-in accent-cyan" data-delay=".86s">principio.</span></span>
+            </h1>
+            <p class="hero-sub anim-fade" style="--d:1.1s">Transforma cada transacción en claridad para tu negocio.
+              Cobra, registra y concilia directamente en tu sistema Microsip.</p>
+            <div class="hero-payment-methods anim-fade" style="--d:1.25s"
+              aria-label="Acepta cobros con Visa y Mastercard">
+              <span>Acepta cobros con</span>
+              <div class="hero-payment-logos">
+                <img src="assets/visa.png" alt="Visa">
+                <img src="assets/mastercard.png" alt="Mastercard">
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-card-wrap anim-fade" style="--d:1s" aria-label="Ejemplo de transacción">
+            <div class="hero-card-tilt" id="tilt-card">
+              <div class="payment-card float-slow">
+                <div class="payment-top">
+                  <span class="payment-label">Cobro aprobado</span>
+                  <span class="status"><i></i> Sincronizado</span>
+                </div>
+                <div class="amount">$<span data-count="2480" data-decimals="2">0.00</span></div>
+                <div class="payment-meta">
+                  <span>Terminal</span><span>Verifone P630</span>
+                  <span>Operación</span><span>Venta</span>
+                  <span>Referencia</span><span>MX-01842</span>
+                </div>
+                <div class="sync">
+                  <span class="sync-mark">✓</span>
+                  Registrado automáticamente en Microsip
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <button class="scroll-cue anim-fade" style="--d:1.9s" data-scroll-to="#solucion"
+          aria-label="Bajar a la siguiente sección">
+          <span class="cue-arrow">↓</span>
+        </button>
+      </section>
+
+      <!-- ============ RESPALDO E INTEGRACIÓN ============ -->
+
+      <section class="ecosystem" aria-label="Respaldo e integración">
+        <div class="ecosystem-heading">Una operación conectada con:</div>
+
+        <div class="ecosystem-grid">
+
+          <article class="ecosystem-item reveal">
+            <div class="ecosystem-logo-wrap ecosystem-logo-wrap--microsip">
+              <img src="assets/microsip-logo.png" alt="Microsip" class="ecosystem-logo ecosystem-logo--microsip">
+            </div>
+            <p>Integración nativa</p>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- ============ SOLUCIÓN ============ -->
+      <section class="section" id="solucion">
+        <div class="value-intro">
+          <div>
+            <p class="section-kicker reveal">Una sola operación</p>
+            <h2 class="section-title">
+              <span class="ml"><span class="ml-in">Cobra. Registra.</span></span>
+              <span class="ml"><span class="ml-in accent-deep" data-delay=".12s">Controla.</span></span>
+            </h2>
+          </div>
+          <p class="section-copy reveal" data-delay=".2s">Monetix no agrega otra capa a tu negocio. Conecta el pago con
+            la operación que ya tienes: cada cobro entra a Microsip y deja información lista para consultar y conciliar.
+          </p>
+        </div>
+
+        <div class="value-grid">
+          <article class="feature feature-dark reveal lift">
+            <div>
+              <p class="section-kicker" style="color:rgba(255,255,255,.42)">01 · Cobra</p>
+              <h3>La terminal es tu punto de partida.</h3>
+              <p>Acepta el cobro y lleva la transacción a tu operación en Microsip.</p>
+              <div class="pci-note">
+                <img src="assets/pci.png" alt="PCI" class="pci-logo">
+                <span>Cifrado de punto a punto por PCI</span>
+              </div>
+            </div>
+            <div class="terminal-stage stagger" aria-hidden="true">
+              <img src="assets/terminal-p630.png" alt="Terminal Monetix Verifone P630" class="terminal-stage-img">
+            </div>
+          </article>
+
+          <div class="feature-stack">
+            <article class="feature feature-pale reveal lift" data-delay=".12s">
+              <div>
+                <p class="section-kicker">02 · Registra</p>
+                <h3>Microsip se actualiza.</h3>
+              </div>
+              <div class="mini-ledger stagger">
+                <div class="tiny-label">Movimientos</div>
+                <div class="ledger-row"><span>Venta 01842</span><strong>$2,480</strong></div>
+                <div class="ledger-row"><span>Venta 01841</span><strong>$1,320</strong></div>
+                <div class="ledger-row"><span>Venta 01840</span><strong>$890</strong></div>
+              </div>
+            </article>
+
+            <article class="feature feature-photo reveal lift" data-delay=".22s">
+              <img src="assets/merchant-tablet-clean.jpg" alt="Negocio operando con información digital">
+              <div class="photo-copy">
+                <p class="section-kicker" style="color:rgba(255,255,255,.58)">03 · Controla</p>
+                <h3>Los datos dejan de estar separados.</h3>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>© Monetix · Rosita Servicios Financieros S.A. de CV. una empresa del Grupo MSP.</span>
-          <div><a href="#">Aviso de privacidad</a><a href="#">Términos</a></div>
+      </section>
+
+      <!-- ============ CÓMO FUNCIONA ============ -->
+      <section class="section journey" id="como-funciona">
+        <div class="journey-head">
+          <div>
+            <p class="section-kicker reveal">Cómo funciona</p>
+            <h2 class="section-title">
+              <span class="ml"><span class="ml-in">Del cobro a la operación,</span></span>
+              <span class="ml"><span class="ml-in" data-delay=".12s">sin pasos <span class="accent-deep">de
+                    más.</span></span></span>
+            </h2>
+          </div>
+          <button class="btn btn-primary reveal" data-delay=".25s" data-portal>Iniciar proceso <span
+              class="arrow">→</span></button>
         </div>
-      </footer>
-    </section>
 
-  </main>
-</div>
+        <div class="journey-grid">
+          <article class="journey-card reveal lift">
+            <span class="journey-number">01</span>
+            <div>
+              <h3>Cobra.</h3>
+              <p>El cliente paga en tu terminal Verifone P630.</p>
+            </div>
+            <div class="journey-visual">
+              <div class="receipt stagger">
+                <div class="tiny-label">Venta aprobada</div>
+                <div class="receipt-row"><span>Total</span><strong>$2,480.00</strong></div>
+                <div class="receipt-row"><span>Tarjeta</span><strong>•••• 4821</strong></div>
+                <div class="receipt-row"><span>Estado</span><strong>OK</strong></div>
+              </div>
+            </div>
+          </article>
 
-<button class="wa" data-wa aria-label="Abrir WhatsApp">
-  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-</button>
+          <article class="journey-card cyan reveal lift" data-delay=".12s">
+            <span class="journey-number">02</span>
+            <div>
+              <h3>Registra.</h3>
+              <p>La información del cobro se integra a Microsip, sin volver a capturarla.</p>
+            </div>
+            <div class="journey-visual">
+              <img src="assets/terminal-close-clean.jpg" alt="Terminal bancaria" class="journey-photo">
+            </div>
+          </article>
 
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
-<script src="js/main.js"></script>
+          <article class="journey-card dark reveal lift" data-delay=".24s" data-bars>
+            <span class="journey-number">03</span>
+            <div>
+              <h3>Controla.</h3>
+              <p>Consulta movimientos y convierte transacciones en información útil para tomar decisiones.</p>
+            </div>
+            <div class="bars" aria-hidden="true">
+              <div class="bar" style="height:36%"></div>
+              <div class="bar" style="height:58%;background:#5bc9d7"></div>
+              <div class="bar" style="height:78%"></div>
+              <div class="bar" style="height:45%;background:#a8e5ec"></div>
+              <div class="bar" style="height:92%;background:#fff"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ CLARIDAD ============ -->
+      <section class="section clarity">
+        <div class="clarity-copy">
+          <p class="section-kicker reveal">Claridad operativa</p>
+          <h2 class="section-title">
+            <span class="ml"><span class="ml-in">Sin letra chiquita.</span></span>
+            <span class="ml"><span class="ml-in" data-delay=".12s">Sin información <span
+                  class="accent-deep">dispersa.</span></span></span>
+          </h2>
+          <p class="section-copy reveal" data-delay=".2s">Monetix está diseñado para saber qué ocurrió con cada cobro y
+            dónde quedó registrado. La tecnología ordena y hace más fácil la operación.</p>
+          <button class="btn reveal" data-delay=".3s" data-wa>Hablar con Monetix <span class="arrow">→</span></button>
+        </div>
+
+        <aside class="clarity-card reveal lift" data-delay=".15s">
+          <div>
+            <p class="section-kicker" style="color:rgba(32,36,39,.55)">Vista de operación</p>
+            <h3>Todo lo importante, en contexto.</h3>
+          </div>
+          <div class="clarity-value"><span data-count="100" data-suffix="%">0</span><br><span>visible.</span></div>
+          <div class="clarity-stack stagger">
+            <div class="clarity-row"><span>Cobro</span><strong>Aprobado</strong></div>
+            <div class="clarity-row"><span>Registro Microsip</span><strong>Sincronizado</strong></div>
+            <div class="clarity-row"><span>Referencia</span><strong>MX-01842</strong></div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ============ PARTNERS ============ -->
+      <section class="partners" id="partners">
+        <div>
+          <p class="section-kicker reveal">Partners Monetix</p>
+          <h2 class="section-title">
+            <span class="ml"><span class="ml-in">Haz negocio con Monetix.</span></span>
+            <span class="ml"><span class="ml-in" data-delay=".12s">Llega a más <span
+                  class="accent-deep">comercios.</span></span></span>
+          </h2>
+          <p class="section-copy reveal" data-delay=".2s">Si puedes acercar Monetix a un comercio, una empresa o una
+            organización, puedes ganar una comisión por ello. Si ya eres Partner Microsip, tu nivel es Estratégico desde
+            el primer día.</p>
+          <button class="btn btn-primary reveal" style="margin-top:28px" data-delay=".3s" data-wa>Quiero ser Partner
+            <span class="arrow">→</span></button>
+        </div>
+
+        <div class="partner-levels">
+          <div class="partner-level reveal lift">
+            <span class="partner-badge">01</span>
+            <div>
+              <h4>Cliente directo</h4>
+              <p>Empresa o comercio que se afilia directamente.</p>
+            </div>
+            <strong>Monetix</strong>
+          </div>
+          <div class="partner-level reveal lift" data-delay=".12s">
+            <span class="partner-badge">02</span>
+            <div>
+              <h4>Partner Monetix</h4>
+              <p>Refiere clientes y genera una comisión.</p>
+            </div>
+            <strong>Comercial</strong>
+          </div>
+          <div class="partner-level featured reveal lift" data-delay=".24s">
+            <span class="partner-badge">03</span>
+            <div>
+              <h4>Partner Estratégico Monetix</h4>
+              <p>Para miembros de la red Partner Microsip.</p>
+            </div>
+            <strong>Preferencial</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LINK DE COBRO ============ -->
+      <section class="payment-link" id="link-de-cobro" aria-labelledby="payment-link-title">
+        <div class="payment-link-copy">
+          <p class="section-kicker reveal">Proceso de compra simplificado</p>
+          <h2 class="section-title" id="payment-link-title">
+            <span class="ml"><span class="ml-in">Link de</span></span>
+            <span class="ml"><span class="ml-in accent-deep" data-delay=".12s">pago.</span></span>
+          </h2>
+          <p class="payment-link-lead reveal" data-delay=".2s">Cobra fácil y rápido enviando un link de pago a tus
+            clientes.</p>
+          <p class="payment-link-description reveal" data-delay=".3s">Compártelo por WhatsApp, correo o el canal que
+            prefieras para que puedan pagar de forma sencilla y segura.</p>
+        </div>
+        <div class="payment-link-visual reveal" data-delay=".15s">
+          <img src="assets/link-cobro-iphone.png" alt="Ejemplo del formulario de pago Monetix en un teléfono"
+            loading="lazy" width="2048" height="1351">
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="faq" id="faq">
+        <div>
+          <p class="section-kicker reveal" style="color:var(--cyan)">Preguntas frecuentes</p>
+          <h2 class="section-title">
+            <span class="ml"><span class="ml-in">Lo que conviene saber</span></span>
+            <span class="ml"><span class="ml-in" data-delay=".12s">antes de <span
+                  class="accent-cyan">cambiar.</span></span></span>
+          </h2>
+          <p class="section-copy reveal" data-delay=".2s">Respuestas directas para empresas que ya conocen las
+            terminales y quieren una operación más integrada.</p>
+        </div>
+
+        <div class="faq-list reveal" data-delay=".15s">
+          <div class="faq-item open">
+            <button class="faq-q"><span>¿En qué se diferencia Monetix de cualquier otra terminal
+                bancaria?</span><span>＋</span></button>
+            <div class="faq-a">La diferencia no está en la terminal, sino en todo lo que pasa después del cobro: la
+              transacción se concilia sola con Microsip, tu dinero se refleja al día siguiente en el módulo de bancos, y
+              cada venta puede facturarse en automático. Menos captura manual, más control real de tu negocio.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>¿Cuáles son las comisiones y costos reales?</span><span>＋</span></button>
+            <div class="faq-a">En Monetix no hay letras chiquitas: la tarifa que te corresponde se calcula según tu giro
+              y se te presenta por escrito antes de que decidas contratar. Así sabes exactamente cuánto pagas por cada
+              cobro, sin sorpresas ni cargos ocultos.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>¿Qué pasa si tengo un problema con un cobro o una
+                disputa?</span><span>＋</span></button>
+            <div class="faq-a">Ninguna transacción se queda sin rastro. Monetix opera con el respaldo de una institución
+              financiera y guarda el detalle completo de cada cobro, así que si algo necesita revisarse, hay información
+              clara y disponible para resolverlo.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>¿Cuánto tiempo tarda el proceso de alta?</span><span>＋</span></button>
+            <div class="faq-a">Todo comienza en el Portal Monetix, donde registras los datos de tu negocio. De ahí, el
+              equipo revisa y valida esa información antes de aprobar el alta. El tiempo exacto depende de qué tan
+              completa esté tu documentación, pero te acompañamos en cada paso para agilizarlo.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q"><span>¿Necesito usar Microsip para contratar Monetix?</span><span>＋</span></button>
+            <div class="faq-a">No, Monetix funciona por sí solo como solución de cobro. Lo que sí es cierto es que, si
+              ya usas Microsip, la integración te da ventajas que ningún otro complementa: conciliación automática,
+              depósitos reflejados en tu módulo de bancos y facturación conectada, completando el paquete de ventajas
+              más competitivo del mercado. Si no usas Microsip, cuéntanos tu caso y el equipo comercial te confirma las
+              opciones disponibles para tu negocio.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FINAL + FOOTER ============ -->
+      <section class="final">
+        <p class="section-kicker reveal">Empieza con claridad</p>
+        <h2 class="section-title">
+          <span class="ml"><span class="ml-in">El crecimiento no se improvisa.</span></span>
+          <span class="ml"><span class="ml-in" data-delay=".12s">Se diseña con <span
+                class="accent-deep">claridad.</span></span></span>
+        </h2>
+        <p class="section-copy reveal" data-delay=".2s">Inicia tu proceso en Portal Monetix o habla con el equipo si
+          prefieres acompañamiento.</p>
+        <div class="final-actions reveal" data-delay=".3s">
+          <button class="btn btn-primary" data-portal>Iniciar en Portal Monetix <span class="arrow">→</span></button>
+          <button class="btn btn-light" data-wa>WhatsApp</button>
+        </div>
+
+        <footer>
+          <div class="footer-top">
+            <div class="footer-brand">
+              <img class="footer-logo" src="assets/monetix-white.png" alt="Monetix">
+              <p>Agregador de pagos con integración al ecosistema Microsip. El cobro es solo el principio.</p>
+            </div>
+            <div class="footer-col">
+              <h5>Producto</h5>
+              <a href="#solucion">Solución</a>
+              <a href="#como-funciona">Cómo funciona</a>
+              <a href="#partners">Partners</a>
+              <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-col">
+              <h5>Contacto</h5>
+              <a href="#" data-wa>WhatsApp</a>
+              <a href="mailto:contacto@monetix.mx">contacto@monetix.mx</a>
+              <a href="#" data-portal>Portal Monetix</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>© Monetix · Rosita Servicios Financieros S.A. de CV. una empresa del Grupo MSP.</span>
+            <div><a href="#">Aviso de privacidad</a><a href="#">Términos</a></div>
+          </div>
+        </footer>
+      </section>
+
+    </main>
+  </div>
+
+  <button class="wa" data-wa aria-label="Abrir WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path
+        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+    </svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
