@@ -2,7 +2,7 @@ name: Deploy landing
 
 on:
   push:
-    branches: [develop]
+    branches: [develop, main]
   workflow_dispatch:
 
 permissions:
@@ -31,4 +31,22 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --env dev
 
-  # Producción (main -> monetix.mx) se habilita después de mover el portal a su subdominio.
+  deploy-prod:
+    name: Publicar en monetix.mx
+    # Candado: produccion solo se publica si la variable del repo PROD_ENABLED vale "true".
+    # Se activa el dia del corte, cuando el portal ya viva en portal.monetix.mx.
+    if: github.ref_name == 'main' && vars.PROD_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://monetix.mx
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Deploy a Cloudflare Workers (env production)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          wranglerVersion: "4.158.0"
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --env production

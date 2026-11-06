@@ -9,7 +9,7 @@
   },
   "workers_dev": false,
   "env": {
-    // Ambiente dev: rama develop -> https://dev.monetix.mx (protegido con Cloudflare Access)
+    // Ambiente dev: rama develop -> https://dev.monetix.mx
     "dev": {
       "routes": [
         {
@@ -17,12 +17,16 @@
           "custom_domain": true
         }
       ]
+    },
+    // Producción: rama main -> https://monetix.mx
+    // Solo se despliega cuando la variable PROD_ENABLED del repo vale "true" (ver deploy.yml).
+    "production": {
+      "routes": [
+        {
+          "pattern": "monetix.mx",
+          "custom_domain": true
+        }
+      ]
     }
-    // Producción (rama main) se agrega cuando el portal ya viva en su subdominio:
-    // "production": {
-    //   "routes": [
-    //     { "pattern": "monetix.mx", "custom_domain": true }
-    //   ]
-    // }
   }
 }
