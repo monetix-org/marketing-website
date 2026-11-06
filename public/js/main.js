@@ -9,7 +9,7 @@
 (function () {
   "use strict";
 
-  /* ---------- CONFIG: reemplazar por los datos definitivos ---------- */
+  /* ---------- CONFIG: reemplazar por los datos definitivos ----------- */
   var PORTAL_URL = "https://portal.monetix.mx";
   var WHATSAPP_URL = "https://wa.me/52XXXXXXXXXX?text=Hola%2C%20me%20interesa%20conocer%20Monetix";
 
